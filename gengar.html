@@ -41,7 +41,7 @@
 
 <body>
   <div class="pokemon-text">
-    <h1>Gengar</h1>
+    <h1>Gengar #096</h1>
     <img src="images/gengar.png" alt="" style="width:313px;height:320px;">
     <p>
 Gengar ist ein dunkelviolett gefärbtes Pokémon, dessen Torso von oval-runder Gestalt ist. Oben am Körper sind zwei spitze, breite Stacheln zu sehen, die an Ohren erinnern. Auch laufen mehrere kleinere Stacheln den Rücken hinunter. Direkt unter den Ohren sind die beiden Arme angebracht. Diese sind kurz, eher breit und an ihren Enden sind drei kurze Finger zu sehen. Auch seine Beine sind relativ dick und kurz. Die Füße sind sehr klein und sind mit drei kurzen, spitzen Zehen bespickt. Hinten besitzt das Geist-Gift-Pokémon einen kurzen, dicken Schwanz. Da der Körper eigentlich nur aus einem Kopf besteht, an dem die Extremitäten angebracht sind, ist das Gesicht relativ groß und liegt in der Mitte des Körpers. Gengar hat zwei große Augen, die aus einer roten Lederhaut und einer kleinen, schmalen und schwarzen Pupille besteht. Ferner hat es einen großen Mund, der zu einem Grinsen geformt ist. Seine weißen Zähne sind dabei zu sehen.
@@ -60,38 +60,51 @@ Gengar ist ein dunkelviolett gefärbtes Pokémon, dessen Torso von oval-runder G
   <br>
   <div class='wrapper'>
     <h2>Statuswerte</h2>
+
+    <div class="skillbar-title">
+      Angriff
+      <span>271</span>
+    </div>
     <div class='bar'>
-      <div class='bar-info att' data-total='87'>
-        Angriff
+      <div class='bar-info att' data-total='261'>
         <span class='percent'>261</span>
       </div>
     </div>
 
+    <div class="skillbar-title">
+      Verteidigung
+      <span>396</span>
+    </div>
     <div class='bar'>
-      <div class='bar-info def' data-total='47'>
-        Verteidigung
+      <div class='bar-info def' data-total='156'>
         <span class='percent'>156</span>
       </div>
     </div>
 
+    <div class="skillbar-title">
+      Stamina
+      <span class="sta">510</span>
+    </div>
     <div class='bar'>
-      <div class='bar-info sta' data-total='31'>
-        Stamina
+      <div class='bar-info sta' data-total='120'>
         <span class='percent'>120</span>
       </div>
     </div>
 
+    <div class="skillbar-title">
+      Wettkampfpunkte
+      <span>3670</span>
+    </div>
     <div class='bar'>
-      <div class='bar-info wp' data-total='64'>
-        Wettkampfpunkte
+      <div class='bar-info cp' data-total='2619'>
         <span class='percent'>2619</span>
       </div>
     </div>
     <br><br>
     <h2>Attacken</h2><br>
     <h3>Quick Moves</h3><br>
-    <div class='bar'>
-      <div class='bar-info quick-ghost' data-total='70' id="quick-move-1" onclick="openMoveInfos(this)">
+    <div class='bar' id="quick-move-1" onclick="openMoveInfos(this)">
+      <div class='bar-info quick-ghost' data-total='70'>
         Bürde
         <span class='percent'>11.67 DPS</span>
       </div>
@@ -102,8 +115,8 @@ Gengar ist ein dunkelviolett gefärbtes Pokémon, dessen Torso von oval-runder G
       DMG 10.00 |
       DPS w/STAB 10.42<br>
     </div><br>
-    <div class='bar'>
-      <div class='bar-info quick-dark' id="quick-move-2" data-total='76' onclick="openMoveInfos(this)">
+    <div class='bar' id="quick-move-2" data-total='76' onclick="openMoveInfos(this)">
+      <div class='bar-info quick-dark'>
         Tiefschlag
         <span class='percent'>12.73 DPS</span>
       </div>

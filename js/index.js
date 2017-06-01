@@ -5,10 +5,30 @@ $(document).ready(function() {
     // bar-info, storing the value of data-total
     // in a variable.  Using jQuery's CSS method,
     // dynamically update the width of each bar.
-    $('.bar-info').each(function() {
+    $('.bar-info.att').each(function() {
       total = $(this).data("total");
+      total = Math.round(total / 2.71);
       $(this).css("width", total + "%");
     });
+
+    $('.bar-info.def').each(function() {
+      total = $(this).data("total");
+      total = Math.round(total / 3.96);
+      $(this).css("width", total + "%");
+    });
+
+    $('.bar-info.sta').each(function() {
+      total = $(this).data("total");
+      total = Math.round(total / 5.1);
+      $(this).css("width", total + "%");
+    });
+
+    $('.bar-info.cp').each(function() {
+      total = $(this).data("total");
+      total = Math.round(total / 36.70);
+      $(this).css("width", total + "%");
+    });
+
     $('.bar-quick').each(function() {
       total = $(this).data("total");
       $(this).css("width", total + "%");

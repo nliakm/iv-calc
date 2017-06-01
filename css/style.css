@@ -130,17 +130,16 @@ body {
   transition: width 3.3s ease-in-out;
 }
 
-.bar .skillbar-title {
+.skillbar-title {
 	position: relative;
-	top:0;
-	left:0;
 	font-weight:bold;
 	font-size:13px;
 	color:#fff;
-	background:#6adcfa;
+	/*background:#fd7473;*/
 }
-.bar .skillbar-title span {
-	display: block;
+.skillbar-title span {
+  display: block;
+  float: right;
   text-align: right;
 	background: rgba(0, 0, 0, 0.1);
 }
