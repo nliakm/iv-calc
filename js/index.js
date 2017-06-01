@@ -9,7 +9,10 @@ $(document).ready(function() {
       total = $(this).data("total");
       $(this).css("width", total + "%");
     });
-    
+    $('.bar-quick').each(function() {
+      total = $(this).data("total");
+      $(this).css("width", total + "%");
+    });
     // Iterate over each element w/ the class percent.  Using
     // jQuery's $(this) will allow us to interact w/ each specific
     // object in the loop.  Then use jQuery's super awesome animate method
@@ -26,12 +29,13 @@ $(document).ready(function() {
         duration: 3000,
         easing: 'swing',
         step: function() {
-          $this.text(Math.ceil(this.Counter) + "%");
+          //$this.text(Math.ceil(this.Counter));
+          $this.text;
         }
       });
     });
   };
-  // Invoke our skillSet function inside a setTimeout, 
+  // Invoke our skillSet function inside a setTimeout,
   // to create a short delay before the animation begins.
   setTimeout(skillSet, 1000);
 });

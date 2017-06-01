@@ -5,16 +5,51 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+
 .wrapper {
-  margin: 0 auto;
-  width: 90%;
+  margin: 60px auto;
+  width: 50%;
   margin-top: 15px;
+  color: white;
+}
+
+.pokemon-text {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  margin: 60px auto;
+}
+
+.pokemon-text p {
+  text-align: justify;
+  width: 61%;
+  color: white;
+}
+.pokemon-text p1 {
+  text-align: left;
+  width: 61%;
+  font-weight: bold;
+  color: white;
+  line-height: 40px;
+}
+.pokemon-text img {
+  margin-right: 15px;
+  float: right;
+}
+
+.pokemon-text h1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 14px;
+  display: inline-block;
+  letter-spacing: 4px;
 }
 
 .bar {
   position: relative;
   width: 100%;
-  height: 48px;
+  height: 38px;
   background: rgba(255, 255, 255, 0.1);
   margin-bottom: 1.5rem;
   border-radius: 5px;
@@ -26,21 +61,34 @@ body {
   color: white;
   width: 10%;
   position: relative;
-  height: 24px;
+  height: 14px;
   transition: width 3.3s ease-in-out;
 }
+
 .bar .bar-info .percent {
   float: right;
 }
-.bar .bar-info.html {
+.bar .bar-info.att {
   background: linear-gradient(#fd7473, #FC688E), #fd7473;
 }
-.bar .bar-info.css {
+.bar .bar-info.def {
   background: linear-gradient(#fec951, #FCAD44), #fec951;
 }
-.bar .bar-info.js {
+.bar .bar-info.sta {
   background: linear-gradient(#47b8e0, #28BEFA), #47b8e0;
 }
-.bar .bar-info.ps {
+.bar .bar-info.wp {
   background: linear-gradient(#9f68d0, #BB68D0), #9f68d0;
+}
+.bar .bar-info.quick-air {
+  background: linear-gradient(to right, rgba(99,147,193,1) 1%,rgba(114,191,249,1) 100%);
+}
+.bar .bar-info.quick-fire {
+  background: linear-gradient(to right, rgba(255,116,0,1) 0%,rgba(255,133,40,1) 100%);
+}
+.bar .bar-info.quick-dragon {
+  background:  linear-gradient(to right, rgba(203,96,179,1) 0%,rgba(165,107,148,1) 33%,rgba(163,40,126,1) 34%,rgba(163,40,126,1) 65%,rgba(163,40,126,1) 65%,rgba(168,0,119,1) 66%,rgba(168,0,119,1) 100%);
+}
+.bar .bar-info.charge-fight {
+  background:  linear-gradient(to right, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
 }
