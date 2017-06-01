@@ -39,3 +39,20 @@ $(document).ready(function() {
   // to create a short delay before the animation begins.
   setTimeout(skillSet, 1000);
 });
+
+function openMoveInfos(element) {
+  if(element.id == "quick-move-1") {
+    if(document.getElementById("quick-move-info-1").style.display == "none") {
+      document.getElementById("quick-move-info-1").style.display = "block";
+    } else {
+      document.getElementById("quick-move-info-1").style.display = "none";
+    }
+  } else if(element.id == "quick-move-2") {
+    if(document.getElementById("quick-move-info-2").style.display == "none") {
+      document.getElementById("quick-move-info-2").style.display = "block";
+    } else {
+      document.getElementById("quick-move-info-2").style.display = "none";
+    }  }
+
+
+}

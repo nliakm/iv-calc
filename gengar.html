@@ -5,38 +5,38 @@
   <title>Pokemon Go - IV Rechner</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-      <link rel="stylesheet" href="css/style.css">
-      <div id="nav">
-              <div class="content">
-                  <ul>
-                    <li><a href="#">Startseite</a>
-                        <div class="submenu">
-                            <div class="content">
-                            Menu Links
-                            </div>
-                        </div>
-                      </li>
-                    <li><a href="#">Pokémon</a>
-                        <div class="submenu">
-                          <div class="content">
-                            Generation 1
-                          </div>
-                          <br>
-                          <div class="content">
-                            Generation 2
-                          </div>
-                        </div>
-                      </li>
-                    <li><a href="#">IV-Rechner</a>
-                        <div class="submenu">
-                            <div class="content">
-                            Menu Links
-                            </div>
-                        </div>
-                      </li>
-                  </ul>
+  <link rel="stylesheet" href="css/style.css">
+  <div id="nav">
+      <div class="content">
+          <ul>
+            <div class="nav-item"><a href="#">Startseite</a>
+                <div class="submenu">
+                    <div class="content">
+                    Menu Links
+                    </div>
+                </div>
               </div>
-          </div>
+            <div class="nav-item"><a href="#">Pokémon</a>
+                <div class="submenu">
+                  <div class="content">
+                    Generation 1
+                  </div>
+                  <br>
+                  <div class="content">
+                    Generation 2
+                  </div>
+                </div>
+              </div>
+            <div class="nav-item"><a href="#">IV-Rechner</a>
+                <div class="submenu">
+                    <div class="content">
+                    Menu Links
+                    </div>
+                </div>
+              </div>
+          </ul>
+      </div>
+  </div>
 </head>
 
 <body>
@@ -57,7 +57,7 @@ Gengar ist ein dunkelviolett gefärbtes Pokémon, dessen Torso von oval-runder G
   <div class="pokemon-properties">
 
   </div>
-  <br><br>
+  <br>
   <div class='wrapper'>
     <h2>Statuswerte</h2>
     <div class='bar'>
@@ -91,22 +91,28 @@ Gengar ist ein dunkelviolett gefärbtes Pokémon, dessen Torso von oval-runder G
     <h2>Attacken</h2><br>
     <h3>Quick Moves</h3><br>
     <div class='bar'>
-      <div class='bar-info quick-ghost' data-total='70'>
+      <div class='bar-info quick-ghost' data-total='70' id="quick-move-1" onclick="openMoveInfos(this)">
         Bürde
         <span class='percent'>11.67 DPS</span>
       </div>
     </div>
-    <div class='quick-move-info'>
+    <div class='quick-move-info' id="quick-move-info-1">
       Cooldown 1.20 |
       EPS 12.50 |
-      DPS 8.33 |
+      DMG 10.00 |
       DPS w/STAB 10.42<br>
     </div><br>
     <div class='bar'>
-      <div class='bar-info quick-dark' data-total='76'>
+      <div class='bar-info quick-dark' id="quick-move-2" data-total='76' onclick="openMoveInfos(this)">
         Tiefschlag
         <span class='percent'>12.73 DPS</span>
       </div>
+    </div>
+      <div class='quick-move-info' id="quick-move-info-2">
+        Cooldown 0.70 |
+        EPS 11.43 |
+        DMG 7.00<br>
+      </div><br>
     <h3>Charge Moves</h3>
     <div class='bar'>
       <div class='bar-info charge-fight' data-total='80'>
