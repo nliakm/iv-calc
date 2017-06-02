@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 body {
   background: #1F1E24;
-  height: 200px;
   font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
+
 }
 
 #nav {
@@ -111,6 +113,104 @@ body {
   display: none;
 }
 
+.text-box-area {
+  margin: 60px 0px 0px 400px;
+  width: 20%;
+  position: relative;
+  float: none;
+  overflow: hidden;
+}
+.text-box-area input {
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 10px 0px;
+  margin: 0 0px 5px 0;
+  font-size: 18px;
+  color: white;
+  background: transparent;
+  letter-spacing: 2px;
+  border: none;
+  border-bottom: 1px solid white;
+}
+.text-box-area input:focus {
+  outline: none;
+  color: #FFF;
+  border-bottom: 1px solid #FFFFFF;
+  box-shadow: 0 2px 2px 0 white;
+}
+
+.section-textbox {
+  display: block;
+  flex-direction: column;
+  padding: 0.5em;
+  margin: 60px auto;
+  width: 50%;
+  margin-top: 15px;
+  color: white;
+}
+
+/* BUTTON BERECHNEN IV RECHNER */
+button {
+		border: 0;
+	  width: 270px;
+	  padding: 10px;
+	  margin: 20px auto;
+		-webkit-border-radius: 5px;
+		   -moz-border-radius: 5px;
+	   			  border-radius: 5px;
+	  display: block;
+	  text-decoration: none;
+	 	text-align: center;
+	  font-size: 1.2em;
+    outline: 0;
+    background-color: gray;
+}
+
+button:hover {
+	  -webkit-transition: background-color 1s ease-in;
+	 	   -moz-transition: background-color 1s ease-in;
+	 	  	 -o-transition: background-color 1s ease-in;
+	     	    transition: background-color 1s ease-in;
+}
+
+button:active {
+		margin-top: 22px;
+    margin-bottom: -2px;
+}
+
+/* Control the colour scheme */
+
+button .update {
+		color: #FFF;
+		background: #8bbc37;
+	  -webkit-box-shadow: 0 3px 1px #64950d;
+		   -moz-box-shadow: 0 3px 1px #64950d;
+		   		  box-shadow: 0 3px 1px #64950d;
+}
+button .update:hover {background: #85b237;}
+button .update:active {
+	  -webkit-box-shadow: 0 1px 1px #64950d;
+		   -moz-box-shadow: 0 1px 1px #64950d;
+		     		box-shadow: 0 1px 1px #64950d;
+}
+
+button .delete {
+		color: #FFF;
+		background: #bc3737;
+	  -webkit-box-shadow: 0 3px 1px #950d0d;
+		   -moz-box-shadow: 0 3px 1px #950d0d;
+		   		  box-shadow: 0 3px 1px #950d0d;
+}
+button .delete:hover {background: #b23737;}
+button .delete:active {
+		margin-top: 22px;
+	  -webkit-box-shadow: 0 1px 1px #950d0d;
+		   -moz-box-shadow: 0 1px 1px #950d0d;
+		     		box-shadow: 0 1px 1px #950d0d;
+}
+
+/* BAR DESIGN POKEMON PAGES */
 .bar {
   position: relative;
   width: 100%;
@@ -130,17 +230,16 @@ body {
   transition: width 3.3s ease-in-out;
 }
 
-.bar .skillbar-title {
+.skillbar-title {
 	position: relative;
-	top:0;
-	left:0;
 	font-weight:bold;
 	font-size:13px;
 	color:#fff;
-	background:#6adcfa;
+	/*background:#fd7473;*/
 }
-.bar .skillbar-title span {
-	display: block;
+.skillbar-title span {
+  display: block;
+  float: right;
   text-align: right;
 	background: rgba(0, 0, 0, 0.1);
 }
@@ -149,7 +248,7 @@ body {
   float: right;
 }
 .bar .bar-info.att {
-  background: linear-gradient(#fd7473, #FC688E), #fd7473;
+  /*background: linear-gradient(#fd7473, #FC688E), #fd7473;*/
 }
 .bar .bar-info.def {
   background: linear-gradient(#fec951, #FCAD44), #fec951;
@@ -161,7 +260,8 @@ body {
   background: linear-gradient(#9f68d0, #BB68D0), #9f68d0;
 }
 .bar .bar-info.quick-air {
-  background: linear-gradient(to right, rgba(99,147,193,1) 1%,rgba(114,191,249,1) 100%);
+  /*background: linear-gradient(to right, rgba(99,147,193,1) 1%,rgba(114,191,249,1) 100%);*/
+  background-image: url("../images/types/type_flying.png");
 }
 .bar .bar-info.quick-fire {
   background: linear-gradient(to right, rgba(255,116,0,1) 0%,rgba(255,133,40,1) 100%);
