@@ -6,8 +6,7 @@ $(document).ready(function() {
       var sta = 5.1;
       var cp = 3670;
       total = $(this).data("total");
-      if(this.className == 'bar-info att')
-      {
+      if(this.className == 'bar-info att') {
         total = Math.round(total / att);
       } else if(this.className == 'bar-info def') {
         total = Math.round(total / 3.96);
@@ -18,13 +17,7 @@ $(document).ready(function() {
       } else {
         total = 100;
       }
-      $(this).attr('data-total',total.toString());
-      $(this).css("width", total + "%");
-    });
-
-
-    $('.bar-quick').each(function() {
-      total = $(this).data("total");
+      // $(this).attr('data-total',total.toString());
       $(this).css("width", total + "%");
     });
     // Iterate over each element w/ the class percent.  Using
