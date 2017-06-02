@@ -1,33 +1,27 @@
-// When the DOM is loaded and ready, let's do some shit!
 $(document).ready(function() {
   function skillSet() {
-    // Iterate over each element w/ a class of
-    // bar-info, storing the value of data-total
-    // in a variable.  Using jQuery's CSS method,
-    // dynamically update the width of each bar.
-    $('.bar-info.att').each(function() {
+    $('.bar-info').each(function() {
+      var att = 2.71;
+      var def = 3.96;
+      var sta = 5.1;
+      var cp = 3670;
       total = $(this).data("total");
-      total = Math.round(total / 2.71);
+      if(this.className == 'bar-info att')
+      {
+        total = Math.round(total / att);
+      } else if(this.className == 'bar-info def') {
+        total = Math.round(total / 3.96);
+      } else if(this.className == 'bar-info sta') {
+        total = Math.round(total / 5.1);
+      } else if(this.className == 'bar-info cp') {
+        total = Math.round(total / 36.70);
+      } else {
+        total = 100;
+      }
+      $(this).attr('data-total',total.toString());
       $(this).css("width", total + "%");
     });
 
-    $('.bar-info.def').each(function() {
-      total = $(this).data("total");
-      total = Math.round(total / 3.96);
-      $(this).css("width", total + "%");
-    });
-
-    $('.bar-info.sta').each(function() {
-      total = $(this).data("total");
-      total = Math.round(total / 5.1);
-      $(this).css("width", total + "%");
-    });
-
-    $('.bar-info.cp').each(function() {
-      total = $(this).data("total");
-      total = Math.round(total / 36.70);
-      $(this).css("width", total + "%");
-    });
 
     $('.bar-quick').each(function() {
       total = $(this).data("total");
@@ -39,8 +33,9 @@ $(document).ready(function() {
     // to implement a counter on each .percent element, which will "count"
     // up incrementally until it reaches the number inside the percent span,
     // aka it's "ceiling".
-    $('.percent').each(function() {
-      var $this = $(this);
+    /*
+    $('.bar-info.att').each(function() {
+      var $this = $(this).data("total");
       $({
         Counter: 10
       }).animate({
@@ -49,11 +44,11 @@ $(document).ready(function() {
         duration: 3000,
         easing: 'swing',
         step: function() {
-          //$this.text(Math.ceil(this.Counter));
-          $this.text;
+          $this.text(Math.ceil(this.Counter));
+          //$this.text;
         }
       });
-    });
+    });*/
   };
   // Invoke our skillSet function inside a setTimeout,
   // to create a short delay before the animation begins.

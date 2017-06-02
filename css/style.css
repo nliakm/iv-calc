@@ -148,7 +148,7 @@ body {
   float: right;
 }
 .bar .bar-info.att {
-  background: linear-gradient(#fd7473, #FC688E), #fd7473;
+  /*background: linear-gradient(#fd7473, #FC688E), #fd7473;*/   
 }
 .bar .bar-info.def {
   background: linear-gradient(#fec951, #FCAD44), #fec951;
@@ -160,7 +160,8 @@ body {
   background: linear-gradient(#9f68d0, #BB68D0), #9f68d0;
 }
 .bar .bar-info.quick-air {
-  background: linear-gradient(to right, rgba(99,147,193,1) 1%,rgba(114,191,249,1) 100%);
+  /*background: linear-gradient(to right, rgba(99,147,193,1) 1%,rgba(114,191,249,1) 100%);*/
+  background-image: url("../images/types/type_flying.png");
 }
 .bar .bar-info.quick-fire {
   background: linear-gradient(to right, rgba(255,116,0,1) 0%,rgba(255,133,40,1) 100%);
