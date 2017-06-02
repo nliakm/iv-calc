@@ -120,6 +120,12 @@ body {
   float: none;
   overflow: hidden;
 }
+
+.text-box-area p {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
 .text-box-area input {
   width: 100%;
   position: relative;

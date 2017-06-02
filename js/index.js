@@ -61,6 +61,17 @@ function openMoveInfos(element) {
     } else {
       document.getElementById("quick-move-info-2").style.display = "none";
     }  }
+}
 
-
+function showTrainerBew(element) {
+  if(element.id == 'checkbox-att') {
+    var elem = document.getElementById('trainer-att');
+  } else if(element.id == 'checkbox-def') {
+    var elem = document.getElementById('trainer-def');
+  } else if(element.id == 'checkbox-sta') {
+    var elem = document.getElementById('trainer-sta');
+  }
+    element.onchange = function() {
+      elem.style.display = this.checked ? 'block' : 'none';
+    };
 }

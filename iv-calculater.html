@@ -157,25 +157,48 @@
       <ins><i>ausgebrütetes Pokemon</i></ins>
     </label>
     <p>Trainerbewertung</p>
-    <input id='checkbox-att' type='checkbox'></input>
+    <input id='checkbox-att' type='checkbox' onchange="showTrainerBew(this)"></input>
     <label for='checkbox-att'>
       <span></span>
       Angriff
       <ins><i>Angriff</i></ins>
     </label>
-
-    <input id='checkbox-def' type='checkbox'></input>
+    <div class="quick-move-info" id="trainer-att">
+      <select name="cars">
+        <option value="volvo">WOW!</option>
+        <option value="saab">Sehr Gut!</option>
+        <option value="fiat">OK!</option>
+        <option value="audi">Keine Fortschritte!</option>
+      </select>
+    </div>
+    <input id='checkbox-def' type='checkbox' onchange="showTrainerBew(this)"></input>
     <label for='checkbox-def'>
       <span></span>
       Verteidigung
       <ins><i>Verteidigung</i></ins>
     </label>
-    <input id='checkbox-sta' type='checkbox'></input>
+    <div class="quick-move-info" id="trainer-def">
+      <select name="cars">
+        <option value="volvo">WOW!</option>
+        <option value="saab">Sehr Gut!</option>
+        <option value="fiat">OK!</option>
+        <option value="audi">Keine Fortschritte!</option>
+      </select>
+    </div>
+    <input id='checkbox-sta' type='checkbox' onchange="showTrainerBew(this)"></input>
     <label for='checkbox-sta'>
       <span></span>
       Stamina
       <ins><i>Stamina</i></ins>
     </label>
+    <div class="quick-move-info" id="trainer-sta">
+      <select name="cars">
+        <option value="volvo">WOW!</option>
+        <option value="saab">Sehr Gut!</option>
+        <option value="fiat">OK!</option>
+        <option value="audi">Keine Fortschritte!</option>
+      </select>
+    </div>
     <button class="update">
       Berechnen!
     </button>
