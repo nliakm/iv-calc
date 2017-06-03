@@ -114,16 +114,24 @@ body {
 }
 
 .text-box-area {
-  margin: 60px 0px 0px 400px;
-  width: 20%;
-  float: left;
-  overflow: hidden;
+  margin: 20px 0px 0px 400px;
+  width: 40%;
+  display:flex;
+  justify-content: left;
+  align-items: left;
  }
 
 .text-box-area p {
   color: white;
   font-weight: bold;
   font-size: 16px;
+}
+
+.egg-checkbox {
+}
+
+.attributes-checkbox {
+  margin-left: 20px;
 }
 
 .pokemon-cp-hp-sd {

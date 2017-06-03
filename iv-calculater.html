@@ -150,15 +150,20 @@
     <input type="number" min="100" placeholder="Sternenstaub"/>
   </div>
   <div class="text-box-area">
-
-
-    <input id='breed-egg-checkbox' type='checkbox'></input>
-    <label for='breed-egg-checkbox'>
-      <span></span>
-      ausgebrütetes Pokemon
-      <ins><i>ausgebrütetes Pokemon</i></ins>
-    </label>
-    <p>Trainerbewertung</p>
+    <div class="egg-checkbox">
+      <input id='breed-egg-checkbox' type='checkbox'></input>
+      <label for='breed-egg-checkbox'>
+        <span></span>
+        ausgebrütetes Pokemon
+        <ins><i>ausgebrütetes Pokemon</i></ins>
+      </label>
+    </div>
+  </div>
+  <div style="clear: both;"></div>
+  <div class="text-box-area">
+    <h3>Trainerbewertung</h3>
+  </div>
+  <div class="text-box-area">
     <input id='checkbox-att' type='checkbox' onchange="showTrainerBew(this)"></input>
     <label for='checkbox-att'>
       <span></span>
@@ -174,6 +179,7 @@
         <option value="fourth-rating">Seine Werte sind insgesamt ganz okay.</option>
       </select>
     </div>
+  <div class="attributes-checkbox">
     <input id='checkbox-def' type='checkbox' onchange="showTrainerBew(this)"></input>
     <label for='checkbox-def'>
       <span></span>
@@ -189,6 +195,8 @@
         <option value="fourth-rating">Seine Werte sind insgesamt ganz okay.</option>
       </select>
     </div>
+  </div>
+  <div class="attributes-checkbox">
     <input id='checkbox-sta' type='checkbox' onchange="showTrainerBew(this)"></input>
     <label for='checkbox-sta'>
       <span></span>
@@ -204,10 +212,12 @@
         <option value="fourth-rating">Seine Werte sind insgesamt ganz okay.</option>
       </select>
     </div>
+  </div>
+  </div>
+    <div style="clear: both;"></div>
     <button class="update">
       Berechnen!
     </button>
-  </div>
 
 
 
