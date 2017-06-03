@@ -144,12 +144,14 @@
     </p>
   </div>
   <br>
+  <div class="pokemon-cp-hp-sd">
+    <input type="number" min="10" placeholder="Wettkampfpunkte"/>
+    <input type="number" min="1" placeholder="Kampfpunkte"/>
+    <input type="number" min="100" placeholder="Sternenstaub"/>
   </div>
   <div class="text-box-area">
-  	<input type="number" min="10" placeholder="Wettkampfpunkte"/>
-  	<input type="number" min="1" placeholder="Kampfpunkte"/>
-    <input type="number" min="100" placeholder="Benötigter Sternenstaub"/>
-    <br>
+
+
     <input id='breed-egg-checkbox' type='checkbox'></input>
     <label for='breed-egg-checkbox'>
       <span></span>
@@ -164,11 +166,12 @@
       <ins><i>Angriff</i></ins>
     </label>
     <div class="quick-move-info" id="trainer-att">
-      <select name="cars">
-        <option value="volvo">WOW!</option>
-        <option value="saab">Sehr Gut!</option>
-        <option value="fiat">OK!</option>
-        <option value="audi">Keine Fortschritte!</option>
+      <select name="trainer-rating">
+        <option value="" selected data-default>Trainerbewertung auswählen</option>
+        <option value="first-rating">Seine Werte sind so hoch, dass ich sie gar nicht berechnen kann! Unglaublich!</option>
+        <option value="second-rating">Ich muss sagen, dass ich von seinen Werten sehr beeindruckt bin.</option>
+        <option value="third-rating">Seine Werte sind recht beeindruckend.</option>
+        <option value="fourth-rating">Seine Werte sind insgesamt ganz okay.</option>
       </select>
     </div>
     <input id='checkbox-def' type='checkbox' onchange="showTrainerBew(this)"></input>
@@ -178,11 +181,12 @@
       <ins><i>Verteidigung</i></ins>
     </label>
     <div class="quick-move-info" id="trainer-def">
-      <select name="cars">
-        <option value="volvo">WOW!</option>
-        <option value="saab">Sehr Gut!</option>
-        <option value="fiat">OK!</option>
-        <option value="audi">Keine Fortschritte!</option>
+      <select name="trainer-rating">
+        <option value="" selected data-default>Trainerbewertung auswählen</option>
+        <option value="first-rating">Seine Werte sind so hoch, dass ich sie gar nicht berechnen kann! Unglaublich!</option>
+        <option value="second-rating">Ich muss sagen, dass ich von seinen Werten sehr beeindruckt bin.</option>
+        <option value="third-rating">Seine Werte sind recht beeindruckend.</option>
+        <option value="fourth-rating">Seine Werte sind insgesamt ganz okay.</option>
       </select>
     </div>
     <input id='checkbox-sta' type='checkbox' onchange="showTrainerBew(this)"></input>
@@ -192,11 +196,12 @@
       <ins><i>Stamina</i></ins>
     </label>
     <div class="quick-move-info" id="trainer-sta">
-      <select name="cars">
-        <option value="volvo">WOW!</option>
-        <option value="saab">Sehr Gut!</option>
-        <option value="fiat">OK!</option>
-        <option value="audi">Keine Fortschritte!</option>
+      <select name="trainer-rating">
+        <option value="" selected data-default>Trainerbewertung auswählen</option>
+        <option value="first-rating">Seine Werte sind so hoch, dass ich sie gar nicht berechnen kann! Unglaublich!</option>
+        <option value="second-rating">Ich muss sagen, dass ich von seinen Werten sehr beeindruckt bin.</option>
+        <option value="third-rating">Seine Werte sind recht beeindruckend.</option>
+        <option value="fourth-rating">Seine Werte sind insgesamt ganz okay.</option>
       </select>
     </div>
     <button class="update">
