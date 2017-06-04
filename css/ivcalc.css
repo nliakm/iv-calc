@@ -63,6 +63,13 @@ body {
 }
 /* END OF NAVIGATION BAR */
 
+.team-image {
+  margin-left: 20px;
+}
+.team-image img {
+  display: none;
+}
+
 .wrapper {
   margin: 60px auto;
   width: 50%;
