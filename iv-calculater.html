@@ -39,13 +39,14 @@
 <body>
   <div class="pokemon-text">
     <h1>IV Rechner</h1>
-    <img src="images/iv-calculator.jpg" alt="" style="width:250px;height:250px;">
+    <img src="images/iv-calculator.png" alt="" style="width:250px;height:250px;">
     <p>
       Mithilfe des IV - Rechners kannst Du die IV-Werte Deines Pokemon ermitteln. Dazu einfach die Felder mit den entsprechenden Werten füllen und berechnen lassen! Manchmal - vor allem bei Pokemon mit niedrigem Level - kann es vorkommen, dass mehrere mögliche Kombinationen angezeigt werden. Dann ist keine eindeutige Berechnung möglich.
     </p>
-  </div>
 
   <div id="form" class="form-wrapper">
+    <h3>Basisinformationen</h3>
+
     <label class="text">
       <span>Wettkampfpunkte</span>
       <div class="input-wrapper">
@@ -66,6 +67,7 @@
         <input type="number" min="200"/>
       </div>
     </label>
+  </div>
 <!--
     <label class="multiple">
       <span>Multiple</span>
@@ -78,9 +80,8 @@
       </div>
     </label>
 -->
-    <div class="pokemon-text">
-      <h3>Zusätzliche Informationen</h3>
-    </div>
+  <div class="form-wrapper">
+    <h3>Zusätzliche Informationen</h3><br>
     <fieldset class="radio-check-label">
       <span class="label">Teamfarbe</span>
       <div class="pokemon-cp-hp-sd">
@@ -107,7 +108,7 @@
 
     <label class="dropdown" id="trainer-rating">
       <span>Trainerbewertung</span>
-      <div class="input-wrapper">
+      <div class="trainer-rating-box">
         <select size="1" id="team-selection">
           <option>-- Bitte auswählen --</option>
           <option value="1">Dein (Pokémon Name) ist insgesamt einfach erstaunlich. Wirklich ein atemberaubendes Exemplar!</option>
@@ -119,119 +120,34 @@
     </label>
 
     <fieldset class="radio-check-label">
-      <span class="label">Stärkste Statuseigenschaft</span>
+      <span class="label">Höchster(r) Wert(e)</span>
       <div class="input-wrapper">
-        <label class="checkbox" for="accept">
-          <input type="checkbox" name="accept" id="accept"/>
+        <label class="checkbox" for="attack">
+          <input type="checkbox" name="attack" id="attack"/>
           <span>Angriff</span>
         </label>
       </div>
 
       <div class="input-wrapper">
-        <label class="checkbox" for="spam" >
-          <input type="checkbox" name="spam" id="spam"/>
+        <label class="checkbox" for="defense" >
+          <input type="checkbox" name="defense" id="defense"/>
           <span>Verteidigung</span>
         </label>
       </div>
 
       <div class="input-wrapper">
-        <label class="checkbox" for="toolbars" >
-          <input type="checkbox" name="toolbars" id="toolbars"/>
+        <label class="checkbox" for="stamina" >
+          <input type="checkbox" name="stamina" id="stamina"/>
           <span>KP</span>
         </label>
-
       </div>
-    </fieldset>
-
-      <input type="submit" name="submit" value="Submit"/>
-      <input type="reset" name="reset" value="Reset"/>
 
   <div class="clear"></div>
-  </div>
+  <input type="submit" name="submit" value="Berechnen"/>
 
-
-
-
-
-  <!--
-  <br>
-  <div class="pokemon-cp-hp-sd">
-    <input type="number" min="10" placeholder="Wettkampfpunkte"/>
-    <input type="number" min="1" placeholder="Kampfpunkte"/>
-    <input type="number" min="100" placeholder="Sternenstaub"/>
   </div>
-  <div class="text-box-area">
-    <div class="egg-checkbox">
-      <input id='breed-egg-checkbox' type='checkbox'></input>
-      <label for='breed-egg-checkbox'>
-        <span></span>
-        ausgebrütetes Pokemon
-        <ins><i>ausgebrütetes Pokemon</i></ins>
-      </label>
-    </div>
-  </div>
-  <div style="clear: both;"></div>
-  <div class="text-box-area">
-    <h3>Trainerbewertung</h3>
-  </div>
-  <div class="text-box-area">
-    <input id='checkbox-att' type='checkbox' onchange="showTrainerBew(this)"></input>
-    <label for='checkbox-att'>
-      <span></span>
-      Angriff
-      <ins><i>Angriff</i></ins>
-    </label>
-    <div class="quick-move-info" id="trainer-att">
-      <select name="trainer-rating">
-        <option value="" selected data-default>Trainerbewertung auswählen</option>
-        <option value="first-rating">Seine Werte sind so hoch, dass ich sie gar nicht berechnen kann! Unglaublich!</option>
-        <option value="second-rating">Ich muss sagen, dass ich von seinen Werten sehr beeindruckt bin.</option>
-        <option value="third-rating">Seine Werte sind recht beeindruckend.</option>
-        <option value="fourth-rating">Seine Werte sind insgesamt ganz okay.</option>
-      </select>
-    </div>
-  <div class="attributes-checkbox">
-    <input id='checkbox-def' type='checkbox' onchange="showTrainerBew(this)"></input>
-    <label for='checkbox-def'>
-      <span></span>
-      Verteidigung
-      <ins><i>Verteidigung</i></ins>
-    </label>
-    <div class="quick-move-info" id="trainer-def">
-      <select name="trainer-rating">
-        <option value="" selected data-default>Trainerbewertung auswählen</option>
-        <option value="first-rating">Seine Werte sind so hoch, dass ich sie gar nicht berechnen kann! Unglaublich!</option>
-        <option value="second-rating">Ich muss sagen, dass ich von seinen Werten sehr beeindruckt bin.</option>
-        <option value="third-rating">Seine Werte sind recht beeindruckend.</option>
-        <option value="fourth-rating">Seine Werte sind insgesamt ganz okay.</option>
-      </select>
-    </div>
-  </div>
-  <div class="attributes-checkbox">
-    <input id='checkbox-sta' type='checkbox' onchange="showTrainerBew(this)"></input>
-    <label for='checkbox-sta'>
-      <span></span>
-      Stamina
-      <ins><i>Stamina</i></ins>
-    </label>
-    <div class="quick-move-info" id="trainer-sta">
-      <select name="trainer-rating">
-        <option value="" selected data-default>Trainerbewertung auswählen</option>
-        <option value="first-rating">Seine Werte sind so hoch, dass ich sie gar nicht berechnen kann! Unglaublich!</option>
-        <option value="second-rating">Ich muss sagen, dass ich von seinen Werten sehr beeindruckt bin.</option>
-        <option value="third-rating">Seine Werte sind recht beeindruckend.</option>
-        <option value="fourth-rating">Seine Werte sind insgesamt ganz okay.</option>
-      </select>
-    </div>
-  </div>
-  </div>
-    <div style="clear: both;"></div>
-    <button class="update">
-      Berechnen!
-    </button>
--->
-
+</div>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>

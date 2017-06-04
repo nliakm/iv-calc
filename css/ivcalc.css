@@ -126,11 +126,11 @@ body {
 .pokemon-cp-hp-sd {
   width: 40%;
   display:flex;
-  justify-content:center;
   align-items:center;
   font-weight:normal;
   font-size:1em;
   color:#A8A7A8;
+  padding-left: 1em;
   /*
   float:left;
   width: 100%;
@@ -143,6 +143,8 @@ body {
   */
  }
 
+/* SET SPACE BETWEEN RADIO ELEMENTS*/
+
  .spacer-first {
    width: 20%;
  }
@@ -151,16 +153,7 @@ body {
    width: 20%;
  }
 
-.section-textbox {
-  display: block;
-  flex-direction: column;
-  padding: 0.5em;
-  margin: 60px auto;
-  width: 50%;
-  margin-top: 15px;
-  color: white;
-}
-
+/* STYLE OF FORM WRAPPER */
 .form-wrapper {
   float:left;
   width: 100%;
@@ -177,18 +170,33 @@ body {
   width:100%;
   float:left;
   margin-bottom:1em;
+  border: none;
+  padding-left: 0;
+  margin-left: 0;
 }
-.form-wrapper label span, .form-wrapper .notes, .form-wrapper .radio-check-label span.label, .pokemon-cp-hp-sd label span, .pokemon-cp-hp-sd .radio-check-label span.label {
+
+/* TEXT POSITION OF INPUT DESCRIPTION */
+.form-wrapper label span, .form-wrapper .notes, .form-wrapper .radio-check-label span.label {
   float:left;
-  width: 25%;
-  text-align:right;
+  width: 20%;
+  padding-top: 0.5em;
+  padding-left: 0em;
+  text-align: right;
 }
 div.input-wrapper {
-  width:70%;
-  float: right;
+  width: 20%;
+  float: left;
   padding:0 0.625em;
 }
-.form-wrapper input, .form-wrapper select, .form-wrapper textarea, form-wrapper .radio, pokemon-cp-hp-sd .radio {
+
+div.trainer-rating-box {
+  width: 65.5%;
+  float: left;
+  padding:0 0.625em;
+}
+
+/* TEXTAREA SIZE*/
+.form-wrapper input, .form-wrapper select, .form-wrapper textarea, form-wrapper .radio {
   width:100%;
   padding:0.625em 0;
 }
@@ -235,6 +243,7 @@ label.dropdown select option, label.multiple select option  {
   background:rgba(0,0,0,0.1);
 }
 
+/* RADIO ELEMENT DESIGN */
 .radio-check-label label {
   background:#000;
   background:rgba(0,0,0,0.16);
@@ -266,6 +275,7 @@ label.dropdown select option, label.multiple select option  {
   opacity:0.01
 }
 
+/* POSITION OF RADIO AND CHECKBOX CIRCLES*/
 .radio-check-label label span {
   display:block;
   padding: 0.563em 15% 0.563em 1.875em;
@@ -273,6 +283,7 @@ label.dropdown select option, label.multiple select option  {
   border-radius:3px;
 }
 
+/* STYLE OF RADIO CIRCLE*/
 .radio-check-label .pokemon-cp-hp-sd .spacer-first label.radio span:before, .radio-check-label .pokemon-cp-hp-sd .spacer label.radio span:before {
   border-radius:8px;
 }
@@ -284,16 +295,21 @@ label.dropdown select option, label.multiple select option  {
   border-width:0px;
 }
 
+/* DISPLAY RADIO AND CHECKBOX CIRCLES*/
 .form-wrapper .radio, .form-wrapper .checkbox, .pokemon-cp-hp-sd .spacer-first .radio, .pokemon-cp-hp-sd .spacer .radio {
-  position:relative;
+  position: relative;
 }
+
+/* POSITION OF TEXT INSIDE RADIO- AND CHECKBOX*/
 .form-wrapper .radio span, .form-wrapper .checkbox span, .pokemon-cp-hp-sd .spacer-first .radio span, .pokemon-cp-hp-sd .spacer .radio span {
-  width :90%;
-  text-align:left;
-  padding-left:1.5em;
+  width: 90%;
+  text-align: left;
+  padding-left: 2em;
 }
+
+/* SIZE OF RADIO AND CHECKBOX*/
 .form-wrapper .radio input, .form-wrapper .checkbox input, .pokemon-cp-hp-sd .spacer-first .radio input, .pokemon-cp-hp-sd .spacer .radio input  {
-  position:absolute;
+  position: absolute;
   left:0;
   top:0;
   width:1em;
@@ -301,41 +317,24 @@ label.dropdown select option, label.multiple select option  {
 }
 
 /* BUTTON IV CALCULATOR */
-input[type=reset], input[type=submit] {
+input[type=submit] {
   width:auto;
-  max-width:34%;
-  float:right;
-  margin-right:0.563em;
-  margin-top:2.50em;
+  max-width:20%;
+  padding:0.563em 2em;
   font-size:1em;
   border: 0 none;
     background:#000;
   color: #BBBBBB;
   border-radius: 3px;
-  padding: 0.563em 4em;
   cursor:pointer;
   box-shadow: 0 1px rgba(255, 255, 255, 0.06);
 }
-input[type=submit] {
-  margin-left:2%;
-  padding:0.563em 6em;
-}
 
-input[name=submit]:hover, input[name=reset]:hover {
+input[name=submit]:hover {
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 1px rgba(255, 255, 255, 0.06);
   color:#FFF;
-}
-input[name="reset"]:hover {
-  background:rgba(140,29,4,0.3);
 }
 input[name="submit"]:hover {
   background:rgba(51,102,77,0.3);
 }
 /* END OF IV CALCULATOR */
-
-.egg-checkbox {
-}
-
-.attributes-checkbox {
-  margin-left: 20px;
-}
