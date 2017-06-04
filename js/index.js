@@ -48,6 +48,22 @@ $(document).ready(function() {
   setTimeout(skillSet, 1000);
 });
 
+function openMoveInfos(element) {
+  if(element.id == "quick-move-1") {
+    if(document.getElementById("quick-move-info-1").style.display == "none") {
+      document.getElementById("quick-move-info-1").style.display = "block";
+    } else {
+      document.getElementById("quick-move-info-1").style.display = "none";
+    }
+  } else if(element.id == "quick-move-2") {
+    if(document.getElementById("quick-move-info-2").style.display == "none") {
+      document.getElementById("quick-move-info-2").style.display = "block";
+    }  else {
+      document.getElementById("quick-move-info-2").style.display = "none";
+    }
+  }
+}
+
 function setTeamRating(element) {
   if(element.id == 'team-blue' && $(element).is(":checked")) {
     console.log("BLAAAAAAAAAAAAAAAAAA");
@@ -80,25 +96,9 @@ function setTeamRating(element) {
     document.getElementById('iv-value').options[2].text = 'Er hat hervorragende Werte! Wie aufregend!';
     document.getElementById('iv-value').options[3].text = 'Seine Werte sind nicht von schlechten Eltern!';
     document.getElementById('iv-value').options[4].text = 'Seine Werte werden dir im Kampf nicht viel bringen.';
-  } else {
   }
 }
-
-function openMoveInfos(element) {
-  if(element.id == "quick-move-1") {
-    if(document.getElementById("quick-move-info-1").style.display == "none") {
-      document.getElementById("quick-move-info-1").style.display = "block";
-    } else {
-      document.getElementById("quick-move-info-1").style.display = "none";
-    }
-  } else if(element.id == "quick-move-2") {
-    if(document.getElementById("quick-move-info-2").style.display == "none") {
-      document.getElementById("quick-move-info-2").style.display = "block";
-    }  else {
-      document.getElementById("quick-move-info-2").style.display = "none";
-    }
-}
-
+/**
 function showTrainerRating(element) {
   if(element.id == 'checkbox-att') {
     var elem = document.getElementById('trainer-att');
@@ -112,7 +112,7 @@ function showTrainerRating(element) {
     };
 }
 
-/**
+
 function setTeamRating(element) {
   if(element.id == 'team-blue' && $(element).is(":checked")) {
     document.getElementById('team-selection').options[1].text = 'Dein (Pokémon Name) ist insgesamt einfach erstaunlich. Wirklich ein atemberaubendes Exemplar!';
