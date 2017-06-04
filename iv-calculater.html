@@ -106,7 +106,7 @@
     </div>
     </fieldset>
 
-    <label class="dropdown" id="trainer-rating">
+    <label class="dropdown">
       <span>Trainerbewertung</span>
       <div class="trainer-rating-box">
         <select size="1" id="team-selection">
@@ -141,13 +141,26 @@
           <span>KP</span>
         </label>
       </div>
+    </fieldset>
 
+      <label class="dropdown">
+        <span>Statusbewertung</span>
+        <div class="trainer-rating-box">
+          <select size="1" id="iv-value">
+            <option>-- Bitte auswählen --</option>
+            <option value="1">Seine Werte sind so hoch, dass ich sie gar nicht berechnen kann! Unglaublich!</option>
+            <option value="2">Ich muss sagen, dass ich von seinen Werten sehr beeindruckt bin.</option>
+            <option value="3">Seine Werte sind recht beeindruckend.</option>
+            <option value="4">Seine Werte sind insgesamt ganz okay.</option>
+          </select>
+        </div>
+      </label>
   <div class="clear"></div>
   <input type="submit" name="submit" value="Berechnen"/>
 
   </div>
 </div>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script src="js/index.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
