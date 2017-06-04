@@ -63,6 +63,25 @@ function openMoveInfos(element) {
     }  }
 }
 
+function setTeamRating(element) {
+  if(element.id == 'team-blue' && $(element).is(":checked")) {
+    document.getElementById('team-selection').options[1].text = 'Dein (Pokémon Name) ist insgesamt einfach erstaunlich. Wirklich ein atemberaubendes Exemplar!';
+    document.getElementById('team-selection').options[2].text = 'Dein (Pokémon Name) ist mir insgesamt wirklich aufgefallen.';
+    document.getElementById('team-selection').options[3].text = 'Dein (Pokémon Name) ist insgesamt ein gutes Pokémon.';
+    document.getElementById('team-selection').options[4].text = 'Dein (Pokémon Name) wird im Kampf insgesamt wahrscheinlich keine großen Fortschritte machen.';
+  } else if(element.id == 'team-yellow' && $(element).is(":checked")) {
+    document.getElementById('team-selection').options[1].text = 'Dein (Pokémon Name) kann es im Kampf mit allen aufnehmen!';
+    document.getElementById('team-selection').options[2].text = 'Dein (Pokémon Name) ist insgesamt wirklich stark!';
+    document.getElementById('team-selection').options[3].text = 'Dein (Pokémon Name) ist insgesamt ganz gut.';
+    document.getElementById('team-selection').options[4].text = 'Dein (Pokémon Name) kann sich im Kampf noch verbessern!';
+  } else if(element.id == 'team-red' && $(element).is(":checked")) {
+    document.getElementById('team-selection').options[1].text = 'Von deinem (Pokémon Name) bin ich insgesamt total beeindruckt. Es kann einfach alles!';
+    document.getElementById('team-selection').options[2].text = 'Dein (Pokémon Name) ist insgesamt sehr stark. Du kannst stolz sein!';
+    document.getElementById('team-selection').options[3].text = 'Dein (Pokémon Name) ist insgesamt ganz gut!';
+    document.getElementById('team-selection').options[4].text = 'Dein (Pokémon Name) ist zwar insgesamt im Kampf nicht allzu beeindruckend, aber ich mag es trotzdem!';
+  }
+}
+
 function showTrainerBew(element) {
   if(element.id == 'checkbox-att') {
     var elem = document.getElementById('trainer-att');

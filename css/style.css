@@ -7,6 +7,7 @@ body {
 
 }
 
+/* NAVIGATION BAR */
 #nav {
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
@@ -60,6 +61,7 @@ body {
 #nav .nav-item:hover .submenu {
     visibility: visible;
 }
+/* END OF NAVIGATION BAR */
 
 .wrapper {
   margin: 60px auto;
@@ -135,13 +137,25 @@ body {
 }
 
 .pokemon-cp-hp-sd {
-  margin: 60px 0px 0px 400px;
+  margin: 0px 20px  0px 400px;
   width: 40%;
-  border: solid;
-  border-color: white;
   display:flex;
   justify-content:center;
   align-items:center;
+  font-weight:normal;
+  font-size:1em;
+  line-height:1em;
+  color:#A8A7A8;
+  /*
+  float:left;
+  width: 100%;
+  max-width:75.000em;
+  font-weight:normal;
+  font-size:1em;
+  line-height:1em;
+  color:#A8A7A8;
+  padding:1em 0;  overflow:hidden;
+  */
  }
 
 .pokemon-cp-hp-sd input {
@@ -305,3 +319,5 @@ select option[data-default] {
 .bar .bar-info.charge-fight {
   background:  linear-gradient(to right, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
 }
+
+/* END OF BARDESIGN */

@@ -1,0 +1,341 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+body {
+  background: #1F1E24;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* NAVIGATION BAR */
+#nav {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow:1px 1px 20px 0 #000;
+
+}
+
+.content {
+    width: 50%;
+    margin: 0 auto;
+    overflow: auto;
+    padding:0 20px;
+}
+
+#nav .nav-item {
+    float: left;
+    width: 20%;
+    color: #1F1E24;
+}
+
+#nav .nav-item a {
+    font-family: Arial, Helveica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+
+}
+
+#nav .nav-item:hover a {
+    background: #8C8C8C;
+    color: #333;
+}
+
+.submenu {
+    width: 100%;
+    background: #8C8C8C;
+    position: absolute;
+    left:0;
+    padding:20px 0;
+    visibility: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color:#333;
+    text-transform: uppercase;
+
+}
+
+#nav .nav-item:hover .submenu {
+    visibility: visible;
+}
+/* END OF NAVIGATION BAR */
+
+.wrapper {
+  margin: 60px auto;
+  width: 50%;
+  margin-top: 15px;
+  color: white;
+}
+
+.pokemon-text {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  margin: 60px auto;
+}
+
+.pokemon-text p {
+  text-align: justify;
+  width: 61%;
+  color: white;
+}
+.pokemon-text p1, p2 {
+  text-align: left;
+  width: 61%;
+  font-weight: bold;
+  color: white;
+  line-height: 40px;
+}
+
+.pokemon-text img {
+  margin-right: 15px;
+  float: right;
+}
+
+.pokemon-text h1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 14px;
+  display: inline-block;
+  letter-spacing: 4px;
+}
+
+.quick-move-info {
+  display: none;
+}
+
+.text-box-area {
+  margin: 20px 0px 0px 400px;
+  width: 40%;
+  display:flex;
+  justify-content: left;
+  align-items: left;
+ }
+
+.text-box-area p {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* INPUT IV CALCULATOR */
+.pokemon-cp-hp-sd {
+  width: 40%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:normal;
+  font-size:1em;
+  color:#A8A7A8;
+  /*
+  float:left;
+  width: 100%;
+  max-width:75.000em;
+  font-weight:normal;
+  font-size:1em;
+  line-height:1em;
+  color:#A8A7A8;
+  padding:1em 0;  overflow:hidden;
+  */
+ }
+
+ .spacer-first {
+   width: 20%;
+ }
+ .spacer {
+   margin-left: 20px;
+   width: 20%;
+ }
+
+.section-textbox {
+  display: block;
+  flex-direction: column;
+  padding: 0.5em;
+  margin: 60px auto;
+  width: 50%;
+  margin-top: 15px;
+  color: white;
+}
+
+.form-wrapper {
+  float:left;
+  width: 100%;
+  max-width:75.000em;
+  font-weight:normal;
+  font-size:1em;
+  line-height:1em;
+  color:#A8A7A8;
+  padding:1em 0;
+  overflow:hidden;
+}
+
+.form-wrapper label, .form-wrapper .radio-check-label, .pokemon-cp-hp-sd label, .pokemon-cp-hp-sd .radio-check-label {
+  width:100%;
+  float:left;
+  margin-bottom:1em;
+}
+.form-wrapper label span, .form-wrapper .notes, .form-wrapper .radio-check-label span.label, .pokemon-cp-hp-sd label span, .pokemon-cp-hp-sd .radio-check-label span.label {
+  float:left;
+  width: 25%;
+  text-align:right;
+}
+div.input-wrapper {
+  width:70%;
+  float: right;
+  padding:0 0.625em;
+}
+.form-wrapper input, .form-wrapper select, .form-wrapper textarea, form-wrapper .radio, pokemon-cp-hp-sd .radio {
+  width:100%;
+  padding:0.625em 0;
+}
+.form-wrapper .text input, .form-wrapper textarea {
+  width:98%;
+  padding-left: 1%; /* % will not work in FF*/
+  padding-right: 1%; /* % will not work in FF*/
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 1px rgba(255, 255, 255, 0.06);
+  border: 0 none;
+  border-radius: 3px;
+  color: #BBBBBB;
+}
+
+label.text input, label.text textarea {
+  background:#000;
+  background:rgba(0,0,0,0.16);
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 1px rgba(255, 255, 255, 0.06);
+  border: 0 none;
+  border-radius: 3px;
+  color: #BBBBBB;
+  transition:background .2s;
+}
+/* DROPDOWN & MULTIPLE*/
+label.dropdown select, label.multiple select {
+  background:#1F1E24;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 1px rgba(255, 255, 255, 0.06);
+  color: #BBBBBB;
+  border: 0 none;
+  border-radius:3px;
+  transition:background .2s;
+}
+label.multiple select {
+  padding-bottom:1.875em;
+}
+label.dropdown select option, label.multiple select option  {
+  margin-bottom:0.625em 1%;
+  cursor:pointer;
+  transition:all .2s;
+}
+
+.radio-check-label input:checked ~ span {
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 1px rgba(255, 255, 255, 0.06);
+  background:#000;
+  background:rgba(0,0,0,0.1);
+}
+
+.radio-check-label label {
+  background:#000;
+  background:rgba(0,0,0,0.16);
+  box-shadow:0 1px rgba(255, 255, 255, 0.06);
+  display:block;
+  border: 0 none;
+  border-radius: 3px;
+  line-height:1em;
+  cursor:pointer;
+  overflow:hidden;
+  margin-bottom:0.5em;
+}
+
+/* RADIO BUTTON */
+.radio-check-label label span:before {
+  content: "";
+  display:block;
+  width:12px;
+  height:12px;
+  background:#000;
+  background:rgba(0,0,0,0.2);
+  position:absolute;
+  left:8px;
+  top:11px;
+  border:1px solid #373431;
+}
+
+.radio-check-label label input {
+  opacity:0.01
+}
+
+.radio-check-label label span {
+  display:block;
+  padding: 0.563em 15% 0.563em 1.875em;
+  transition:all .2s;
+  border-radius:3px;
+}
+
+.radio-check-label .pokemon-cp-hp-sd .spacer-first label.radio span:before, .radio-check-label .pokemon-cp-hp-sd .spacer label.radio span:before {
+  border-radius:8px;
+}
+.radio-check-label label.checkbox span:before {
+  border-radius:2px;
+}
+.radio-check-label input:checked ~ span:before {
+  background:#FFF;
+  border-width:0px;
+}
+
+.form-wrapper .radio, .form-wrapper .checkbox, .pokemon-cp-hp-sd .spacer-first .radio, .pokemon-cp-hp-sd .spacer .radio {
+  position:relative;
+}
+.form-wrapper .radio span, .form-wrapper .checkbox span, .pokemon-cp-hp-sd .spacer-first .radio span, .pokemon-cp-hp-sd .spacer .radio span {
+  width :90%;
+  text-align:left;
+  padding-left:1.5em;
+}
+.form-wrapper .radio input, .form-wrapper .checkbox input, .pokemon-cp-hp-sd .spacer-first .radio input, .pokemon-cp-hp-sd .spacer .radio input  {
+  position:absolute;
+  left:0;
+  top:0;
+  width:1em;
+  height:1em;
+}
+
+/* BUTTON IV CALCULATOR */
+input[type=reset], input[type=submit] {
+  width:auto;
+  max-width:34%;
+  float:right;
+  margin-right:0.563em;
+  margin-top:2.50em;
+  font-size:1em;
+  border: 0 none;
+    background:#000;
+  color: #BBBBBB;
+  border-radius: 3px;
+  padding: 0.563em 4em;
+  cursor:pointer;
+  box-shadow: 0 1px rgba(255, 255, 255, 0.06);
+}
+input[type=submit] {
+  margin-left:2%;
+  padding:0.563em 6em;
+}
+
+input[name=submit]:hover, input[name=reset]:hover {
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3) inset, 0 1px rgba(255, 255, 255, 0.06);
+  color:#FFF;
+}
+input[name="reset"]:hover {
+  background:rgba(140,29,4,0.3);
+}
+input[name="submit"]:hover {
+  background:rgba(51,102,77,0.3);
+}
+/* END OF IV CALCULATOR */
+
+.egg-checkbox {
+}
+
+.attributes-checkbox {
+  margin-left: 20px;
+}
