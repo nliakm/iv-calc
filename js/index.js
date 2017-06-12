@@ -104,6 +104,11 @@ function setTeamRating(element) {
   }
 }
 
+function buttonCalc() {
+  document.getElementById('input-area').style.display = "none";
+  document.getElementById('result').style.display = "block";
+}
+
 /**
 function showTrainerRating(element) {
   if(element.id == 'checkbox-att') {

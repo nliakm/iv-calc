@@ -38,36 +38,12 @@
 
 <body>
   <div class="pokemon-text">
-    <h1>IV Rechner</h1>
+    <h1>IV - Rechner</h1>
     <img src="images/iv-calculator.png" alt="" style="width:250px;height:250px;">
     <p>
       Mithilfe des IV - Rechners kannst Du die IV-Werte Deines Pokemon ermitteln. Dazu einfach die Felder mit den entsprechenden Werten füllen und berechnen lassen! Manchmal - vor allem bei Pokemon mit niedrigem Level - kann es vorkommen, dass mehrere mögliche Kombinationen angezeigt werden. Dann ist keine eindeutige Berechnung möglich.
     </p>
 
-  <div id="form" class="form-wrapper">
-    <h3>Basisinformationen</h3>
-
-    <label class="text">
-      <span>Wettkampfpunkte</span>
-      <div class="input-wrapper">
-        <input type="number" min="10"/>
-      </div>
-    </label>
-
-    <label class="text">
-      <span>Kampfpunkte</span>
-      <div class="input-wrapper">
-        <input type="number" min="1"/>
-      </div>
-    </label>
-
-    <label class="text">
-      <span>Sternenstaub</span>
-      <div class="input-wrapper">
-        <input type="number" min="200"/>
-      </div>
-    </label>
-  </div>
 <!--
     <label class="multiple">
       <span>Multiple</span>
@@ -80,7 +56,31 @@
       </div>
     </label>
 -->
-  <div class="form-wrapper">
+  <div class="form-wrapper" id="input-area">
+
+      <h3>Basisinformationen</h3>
+
+      <label class="text">
+        <span>Wettkampfpunkte</span>
+        <div class="input-wrapper">
+          <input type="number" min="10"/>
+        </div>
+      </label>
+
+      <label class="text">
+        <span>Kampfpunkte</span>
+        <div class="input-wrapper">
+          <input type="number" min="1"/>
+        </div>
+      </label>
+
+      <label class="text">
+        <span>Sternenstaub</span>
+        <div class="input-wrapper">
+          <input type="number" min="200"/>
+        </div>
+      </label>
+
     <h3>Zusätzliche Informationen</h3><br>
     <fieldset class="radio-check-label">
       <span class="label">Teamfarbe</span>
@@ -161,9 +161,23 @@
         </div>
       </label>
   <div class="clear"></div>
-  <input type="submit" name="submit" value="Berechnen"/>
-
+  <input type="submit" name="submit" value="Berechnen" onclick="buttonCalc()"/>
   </div>
+</div>
+<div class="myResult" id="result">
+  <h2>Ergebnis</h2>
+  <p>
+    Angriff: 15
+    <br>
+    Verteidigung: 14
+    <br>
+    Stamina: 14
+    <br>
+    Zusammenfassende IV-Wertung: 93%
+    <br>
+    IV-Bewertung nach max. WP: 96%
+  </p>
+
 </div>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/index.js"></script>

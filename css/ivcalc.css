@@ -345,3 +345,12 @@ input[name="submit"]:hover {
   background:rgba(51,102,77,0.3);
 }
 /* END OF IV CALCULATOR */
+
+/* RESULT FORM OF IV CALCULATION */
+.myResult  {
+  margin: 60px auto;
+  width: 50%;
+  margin-top: 15px;
+  color: white;
+  display: none;
+}
