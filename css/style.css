@@ -325,6 +325,7 @@ select option[data-default] {
 .tg  {
   border-collapse:collapse;
   border-spacing:0;
+  cursor: text;
 }
 .tg td{
   font-family:Arial, sans-serif;
@@ -343,6 +344,20 @@ select option[data-default] {
   border-width:1px;
   overflow:hidden;
   word-break:normal;
+  cursor: default;
+}
+.tg th.selected {
+  background-color: green;
+}
+
+.tg th.effective {
+  background-color: green;
+}
+.tg th.noteffective {
+  background-color: yellow;
+}
+.tg th.immun {
+  background-color: red;
 }
 .tg .tg-baqh{
   text-align:center;
