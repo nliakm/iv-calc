@@ -319,5 +319,35 @@ select option[data-default] {
 .bar .bar-info.charge-fight {
   background:  linear-gradient(to right, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
 }
-
 /* END OF BARDESIGN */
+
+/* START OF TABLEDESIGN */
+.tg  {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+.tg td{
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  padding:20px 20px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+}
+.tg th{font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  padding:20px 20px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+}
+.tg .tg-baqh{
+  text-align:center;
+  vertical-align:top;
+}
+.tg .tg-yw4l{
+  vertical-align:top;
+}
