@@ -4909,11 +4909,53 @@ a.label:focus {
 .label-fee[href]:focus {
   background-color: #ec971f;
 }
+.label-gift {
+  background-color: #A70499;
+}
+.label-gift[href]:hover,
+.label-gift[href]:focus {
+  background-color: #ec971f;
+}
 .label-kampf {
   background-color: #d9534f;
 }
 .label-kampf[href]:hover,
 .label-kampf[href]:focus {
+  background-color: #c9302c;
+}
+.label-boden {
+  background-color: #d9534f;
+}
+.label-boden[href]:hover,
+.label-boden[href]:focus {
+  background-color: #c9302c;
+}
+.label-gestein {
+  background-color: #d9534f;
+}
+.label-gestein[href]:hover,
+.label-gestein[href]:focus {
+  background-color: #c9302c;
+}
+.label-psycho {
+  background-color: #d9534f;
+}
+.label-psycho[href]:hover,
+.label-psycho[href]:focus {
+  background-color: #c9302c;
+}
+.label-unlicht {
+  background-color: #d9534f;
+}
+.label-unlicht[href]:hover,
+.label-unlicht[href]:focus {
+  background-color: #c9302c;
+}
+.label-drachen {
+  background-color: #d9534f;
+}
+.label-drachen[href]:hover,
+.label-drachen[href]:focus {
   background-color: #c9302c;
 }
 .badge {
