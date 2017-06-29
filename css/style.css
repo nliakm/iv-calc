@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 body {
-  background: #1F1E24;
+  /*background: #1F1E24;*/
+  background: #355492;
   font-family: 'Open Sans', sans-serif;
   justify-content: center;
   align-items: center;
