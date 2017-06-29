@@ -1,0 +1,17 @@
+{
+  "defense": {
+    "normal": [
+      { "value": "effective", "types": ["fighting"] },
+      { "value": "noteffective", "types": [] },
+      { "value": "immun", "types": ["ghost"] }
+    ],
+    "fire": [
+      { "value": "effective", "types": ["ground", "rock", "water" ] },
+      { "value": "noteffective", "types": ["bug", "fairy", "grass", "ice", "steel" ] },
+      { "value": "immun", "types": [] }
+    ]
+  },
+  "offense": {
+    "normal": "nada"
+  }
+}

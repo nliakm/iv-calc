@@ -104,11 +104,25 @@ function setTeamRating(element) {
   }
 }
 
+
 function buttonCalc() {
   document.getElementById('input-area').style.display = "none";
   document.getElementById('result').style.display = "block";
-}
 
+  //var json = JSON.parse(data);
+
+  $.getJSON("types.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+    alert(json.defense.fire);
+    for (i in json.defense.fire) {
+        console.log("Wert:" + json.defense.fire[i].value);
+        for (j in json.defense.fire[i].value) {
+            console.log(json.defense.fire[i].types[j]);
+        }
+    }
+});
+  //alert(json.defense.normal);
+}
 /**
 function showTrainerRating(element) {
   if(element.id == 'checkbox-att') {

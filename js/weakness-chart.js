@@ -28,7 +28,7 @@ table.addEventListener('click', function(e) {
     }
   } else {
     th.className = 'selected'
-    getInformation(selectedCells[0].id)
+    getInformation(selectedCells[0].id)   
   }
 })
 
@@ -47,4 +47,8 @@ function getInformation(e) {
       break;
     default:
   }
+}
+
+function testJSON() {
+
 }
