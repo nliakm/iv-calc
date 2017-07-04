@@ -1,0 +1,10 @@
+{
+  "id": "01",
+  "defense": {
+    "normal": [
+        { "effective": "fighting" },
+        { "noteffective": "nothing" },
+        { "immun": "ghost" }
+    ]
+  }
+}

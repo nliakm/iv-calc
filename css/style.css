@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 body {
-  background: #1F1E24;
+  /*background: #1F1E24;*/
+  background: #355492;
   font-family: 'Open Sans', sans-serif;
   justify-content: center;
   align-items: center;
@@ -319,5 +320,50 @@ select option[data-default] {
 .bar .bar-info.charge-fight {
   background:  linear-gradient(to right, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
 }
-
 /* END OF BARDESIGN */
+
+/* START OF TABLEDESIGN */
+.tg  {
+  border-collapse:collapse;
+  border-spacing:0;
+  cursor: text;
+}
+.tg td{
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  padding:20px 20px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+}
+.tg th{font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  padding:20px 20px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+  cursor: default;
+}
+.tg th.selected {
+  background-color: green;
+}
+
+.tg th.effective {
+  background-color: green;
+}
+.tg th.noteffective {
+  background-color: yellow;
+}
+.tg th.immun {
+  background-color: red;
+}
+.tg .tg-baqh{
+  text-align:center;
+  vertical-align:top;
+}
+.tg .tg-yw4l{
+  vertical-align:top;
+}

@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #1F1E24;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.tg  {
+  border-collapse:collapse;
+  border-spacing:0;
+  cursor: text;
+}
+.tg td{
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  padding:20px 20px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+}
+.tg th{font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  padding:20px 20px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+  cursor: default;
+}
+.tg th.selected {
+  background-color: green;
+}
+
+.tg th.effective {
+  background-color: green;
+}
+.tg th.noteffective {
+  background-color: yellow;
+}
+.tg th.immun {
+  background-color: red;
+}
+.tg .tg-baqh{
+  text-align:center;
+  vertical-align:top;
+}
+.tg .tg-yw4l{
+  vertical-align:top;
+}

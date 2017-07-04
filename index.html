@@ -2,107 +2,106 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Pokemon Go - IV Rechner</title>
+  <title>Startseite</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-      <link rel="stylesheet" href="css/style.css">
-</head>
+  <link rel="stylesheet" href="css/ivcalc.css">
 
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Pokémon Go</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Startseite</a></li>
+              <li><a href="iv-calculater.html">IV-Rechner</a></li>
+              <li><a href="weakness-chart.html">Typeffektivitäten</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pokemon <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">Generation I</li>
+                  <li><a href="glurak.html">Glurak</a></li>
+                  <li><a href="gengar.html">Gengar</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Generation II</li>
+                  <li><a href="#">Despotar</a></li>
+                  <li><a href="#">Heiteira</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!--
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+              <li><a href="">Einstellungen</a></li>
+              <li><a href="">Ausloggen</a></li>
+            </ul>
+          -->
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
   <div class="pokemon-text">
-    <h1>Glurak</h1>
-    <img src="images/glurak.png" alt="" style="width:320px;height:230px;">
+    <h1>Startseite</h1>
     <p>
-      Gluraks Körperbau erinnert an einen europäischen Drachen; es besitzt einen kräftigen, echsenartigen Körper mit klauenbewehrten,
-      aber eher verkümmerten Armen, dafür aber stämmigen und kräftigen Beinen, auf denen es steht, und einem sehr langen, kräftigen Schweif,
-      an dessen Ende eine Flamme lodert. Sein Kopf wird von einem langen Hals getragen. Es hat einen kraftvollen Kiefer mit scharfen Zähnen und
-      zwei stumpfe Hörner. Auffällig sind seine großen, mit bläulichen Flughäuten bespannten Flügel. Seine Haut ist in einem kräftigen Orangeton gehalten,
-      nur sein Bauch und die Unterseite des Schweifes sind cremefarben.
+      Willkommen auf meiner Seite. Hier findest Du alles mögliche und Wissenswerte zu Pokémon Go: IV-Rechner, detaillierte Informationen zu jedem Pokemon, interaktive Typtabelle und vieles mehr!
     </p>
-    <p1>
-      Typ: Flug , Feuer
-      <br>
-      Stärken: Kampf, Käfer(2x), Stahl(2x),Feuer, Pflanze, Fee
-      <br>
-      Schwächen: Gestein(2x), Wasser, Elektro
-
-    </p1>
-  </div>
-  <div class="pokemon-properties">
-
-  </div>
-  <br><br>
-  <div class='wrapper'>
-    <h2>Statuswerte</h2>
-    <div class='bar'>
-      <div class='bar-info att' data-total='66'>
-        Angriff
-        <span class='percent'>223</span>
-      </div>
-    </div>
-
-    <div class='bar'>
-      <div class='bar-info def' data-total='51'>
-        Verteidigung
-        <span class='percent'>176</span>
-      </div>
-    </div>
-
-    <div class='bar'>
-      <div class='bar-info sta' data-total='43'>
-        Stamina
-        <span class='percent'>156</span>
-      </div>
-    </div>
-
-    <div class='bar'>
-      <div class='bar-info wp' data-total='71'>
-        Wettkampfpunkte
-        <span class='percent'>2686</span>
-      </div>
-    </div>
-    <br><br>
-    <h2>Attacken</h2><br>
-    <h3>Quick Moves</h3><br>
-    <div class='bar'>
-      <div class='bar-info quick-air' data-total='70'>
-        Luftschnitt
-        <span class='percent'>11.67 DPS</span>
-      </div>
-    </div>
-    <div class='bar'>
-      <div class='bar-info quick-fire' data-total='76'>
-        Feuerwirbel
-        <span class='percent'>12.73 DPS</span>
-      </div>
-    <h3>Charge Moves</h3>
-    <div class='bar'>
-      <div class='bar-info quick-fire' data-total='80'>
-        Hitzekoller
-        <span class='percent'>160</span>
-      </div>
-    </div>
-    <div class='bar'>
-      <div class='bar-info quick-fire' data-total='75'>
-        Feuersturm
-        <span class='percent'>140</span>
-      </div>
-    </div>
-      <div class='bar'>
-        <div class='bar-info quick-dragon' data-total='50'>
-          Drachenklaue
-          <span class='percent'>50</span>
-        </div>
-      </div>
   </div>
 
 
-
-
-
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="types.json"></script>
 </body>
 </html>

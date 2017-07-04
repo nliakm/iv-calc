@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Go - IV Rechner</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--<link rel="icon" href="../../favicon.ico">-->
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/navbar.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Pokémon Go</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Startseite</a></li>
+            <li><a href="iv-calculater.html">IV-Rechner</a></li>
+            <li class="active"><a href="#">Typeffektivitäten</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pokemon <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Generation I</li>
+                <li><a href="glurak.html">Glurak</a></li>
+                <li><a href="gengar.html">Gengar</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Generation II</li>
+                <li><a href="#">Despotar</a></li>
+                <li><a href="#">Heiteira</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!--
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+            <li><a href="">Einstellungen</a></li>
+            <li><a href="">Ausloggen</a></li>
+          </ul>
+        -->
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+
+  </div> <!-- /container -->
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  <div class="pokemon-text">
+    <h1>Typeffektivitäten</h1>
+    <p>
+      In dieser Tabelle siehst Du alle Pokemontypen und dessen Stärken sowie Schwächen. Klicke auf einen Typen um seine Stärken und Schwächen hervorzuheben. Auch kannst Du mehrere Typen gleichzeitig auswählen, um Dir Informationen Über Pokemon anzeigen zu lassen, die zwei Typen besitzen.
+    </p>
+  </div>
+
+  <table class="tg" id="table">
+    <tr>
+      <th class="tg-baqh"></th>
+      <th class="tg-yw4l" id="def-normal"><img src="images/types/type_normal.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-fire"><img src="images/types/type_fire.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-water"><img src="images/types/type_water.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-electric"><img src="images/types/type_electric.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-grass"><img src="images/types/type_grass.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-ice"><img src="images/types/type_ice.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-fighting"><img src="images/types/type_fighting.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-poison"><img src="images/types/type_poison.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-ground"><img src="images/types/type_ground.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-flying"><img src="images/types/type_flying.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-psychic"><img src="images/types/type_psychic.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-bug"><img src="images/types/type_bug.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-rock"><img src="images/types/type_rock.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-ghost"><img src="images/types/type_ghost.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-dragon"><img src="images/types/type_dragon.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-fairy"><img src="images/types/type_fairy.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-dark"><img src="images/types/type_dark.png" alt="" style="width:40px;height:40px;"></th>
+      <th class="tg-yw4l" id="def-steel"><img src="images/types/type_steel.png" alt="" style="width:40px;height:40px;"></th>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-normal"><img src="images/types/type_normal.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-fire"><img src="images/types/type_fire.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-water"><img src="images/types/type_water.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-electric"><img src="images/types/type_electric.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-grass"><img src="images/types/type_grass.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-ice"><img src="images/types/type_ice.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-fighting"><img src="images/types/type_fighting.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-poison"><img src="images/types/type_poison.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-ground"><img src="images/types/type_ground.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-flying"><img src="images/types/type_flying.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-psychic"><img src="images/types/type_psychic.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-bug"><img src="images/types/type_bug.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-rock"><img src="images/types/type_rock.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-ghost"><img src="images/types/type_ghost.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-dragon"><img src="images/types/type_dragon.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-fairy"><img src="images/types/type_fairy.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-dark"><img src="images/types/type_dark.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+    <tr>
+      <th class="tg-baqh" id="att-steel"><img src="images/types/type_steel.png" alt="" style="width:40px;height:40px;"></th>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+      <td class="tg-yw4l"></td>
+    </tr>
+  </table>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/weakness-chart.js"></script>
+</body>
+</html>

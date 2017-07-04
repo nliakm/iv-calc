@@ -104,9 +104,24 @@ function setTeamRating(element) {
   }
 }
 
+var jsonString = '{"defense":{"bug":[{"value":"effective","types":["fire","flying","rock"]},{"value":"noteffective","types":["grass","ground","fight"]},{"value":"resistant","types":[]}],"dark":[{"value":"effective","types":["bug","fairy","fight"]},{"value":"noteffective","types":["dark","ghost"]},{"value":"resistant","types":["psycho"]}],"dragon":[{"value":"effective","types":["dragon","fairy","ice"]},{"value":"noteffective","types":["electric","fire","grass","water"]},{"value":"resistant","types":[]}],"electric":[{"value":"effective","types":["ground"]},{"value":"noteffective","types":["electric","flying","steel"]},{"value":"resistant","types":[]}],"fairy":[{"value":"effective","types":["poison","steel"]},{"value":"noteffective","types":["bug","dark","fight"]},{"value":"resistant","types":["dragon"]}],"fighting":[{"value":"effective","types":["fairy","flying","psycho"]},{"value":"noteffective","types":["bug","dark","rock"]},{"value":"resistant","types":[]}],"fire":[{"value":"effective","types":["ground","rock","water"]},{"value":"noteffective","types":["bug","fairy","fire","grass","ice","steel"]},{"value":"resistant","types":[]}],"ghost":[{"value":"effective","types":["dark","ghost"]},{"value":"noteffective","types":["bug","poison"]},{"value":"resistant","types":["normal","fight"]}],"grass":[{"value":"effective","types":["bug","fire","flying","poison","ice"]},{"value":"noteffective","types":["electric","grass","ground","water"]},{"value":"resistant","types":[]}],"ground":[{"value":"effective","types":["ice","grass","water"]},{"value":"noteffective","types":["rock","poison"]},{"value":"resistant","types":["electric"]}],"normal":[{"value":"effective","types":["fighting"]},{"value":"noteffective","types":[]},{"value":"resistant","types":["ghost"]}],"poison":[{"value":"effective","types":["ground","psycho"]},{"value":"noteffective","types":["bug","grass","fairy","poison","fight"]},{"value":"resistant","types":[]}],"psychic":[{"value":"effective","types":["bug","dark","ghost"]},{"value":"noteffective","types":["fight","psycho"]},{"value":"resistant","types":[]}],"rock":[{"value":"effective","types":["grass","ground","steel","fight","water"]},{"value":"noteffective","types":["fire","normal","flying","poison"]},{"value":"resistant","types":[]}],"water":[{"value":"effective","types":["electric","grass"]},{"value":"noteffective","types":["fire","steel","ice","water"]},{"value":"resistant","types":[]}]}}';
+
 function buttonCalc() {
+
+  //var jsonTemp JSON.stringify(jsonString);
+  var json = JSON.parse(jsonString);
+  for (i in json.defense.fire) {
+      console.log("Wert:" + json.defense.fire[i].value);
+      for (j in json.defense.fire[i].value) {
+          console.log(json.defense.fire[i].types[j]);
+      }
+  }
+  // $.getJSON( "types.json", function( data ) {
+  //
+  //   });
   document.getElementById('input-area').style.display = "none";
   document.getElementById('result').style.display = "block";
+
 }
 
 /**
