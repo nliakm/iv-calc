@@ -8,7 +8,7 @@
     "dark": [
       { "value": "effective", "types": ["bug", "fairy", "fight"] },
       { "value": "noteffective", "types": ["dark", "ghost"] },
-      { "value": "resistant", "types": ["psycho"] }
+      { "value": "resistant", "types": ["psychic"] }
     ],
     "dragon": [
       { "value": "effective", "types": ["dragon", "fairy", "ice"] },
@@ -26,7 +26,7 @@
       { "value": "resistant", "types": ["dragon"] }
     ],
     "fighting": [
-      { "value": "effective", "types": ["fairy", "flying", "psycho"] },
+      { "value": "effective", "types": ["fairy", "flying", "psychic"] },
       { "value": "noteffective", "types": ["bug", "dark", "rock"] },
       { "value": "resistant", "types": [] }
     ],
@@ -56,13 +56,13 @@
       { "value": "resistant", "types": ["ghost"] }
     ],
     "poison": [
-      { "value": "effective", "types": ["ground", "psycho"] },
+      { "value": "effective", "types": ["ground", "psychic"] },
       { "value": "noteffective", "types": ["bug", "grass", "fairy", "poison", "fight"] },
       { "value": "resistant", "types": [] }
     ],
     "psychic": [
       { "value": "effective", "types": ["bug", "dark", "ghost"] },
-      { "value": "noteffective", "types": ["fight", "psycho"] },
+      { "value": "noteffective", "types": ["fight", "psychic"] },
       { "value": "resistant", "types": [] }
     ],
     "rock": [
@@ -74,9 +74,6 @@
       { "value": "effective", "types": ["electric", "grass"] },
       { "value": "noteffective", "types": ["fire", "steel", "ice", "water"] },
       { "value": "resistant", "types": [] }
-    ],
-  },
-  "offense": {
-    "normal": "nada"
+    ]
   }
 }
