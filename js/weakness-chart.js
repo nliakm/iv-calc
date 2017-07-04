@@ -21,7 +21,7 @@ table.addEventListener('click', function(e) {
       selectedCells[0].className = ''
       th.className = 'selected'
       highlightAttTypes(selectedCells[0].id)
-      
+
       if(id.inlcudes("def")) {
         highlightAttTypes(selectedCells[0].id)
         //highlightAttTypes(selectedCells[1].id)
@@ -58,6 +58,7 @@ function deselectTypes(e) {
           if(json['defense'][typeString][i].types[j] != null) {
             console.log("remove effective: " + json['defense'][typeString][i].types[j]);
             document.getElementById('att-' + json['defense'][typeString][i].types[j]).className = '';
+            document.getElementById(typeString + '-' + json['defense'][typeString][i].types[j]).className = '';
           }
         }
       }
@@ -66,6 +67,7 @@ function deselectTypes(e) {
           if(json['defense'][typeString][i].types[j] != null) {
             console.log("remove noteffective: " + json['defense'][typeString][i].types[j]);
             document.getElementById('att-' + json['defense'][typeString][i].types[j]).className = '';
+            document.getElementById(typeString + '-' + json['defense'][typeString][i].types[j]).className = '';
           }
         }
       }
@@ -74,6 +76,7 @@ function deselectTypes(e) {
           if(json['defense'][typeString][i].types[j] != null) {
             console.log("remove immun: " + json['defense'][typeString][i].types[j]);
             document.getElementById('att-' + json['defense'][typeString][i].types[j]).className = '';
+            document.getElementById(typeString + '-' + json['defense'][typeString][i].types[j]).className = '';                
           }
         }
       }
@@ -90,6 +93,7 @@ function highlightAttTypes(e) {
         if(json['defense'][typeString][i].types[j] != null) {
           console.log("Effektiv: " + json['defense'][typeString][i].types[j]);
           document.getElementById('att-' + json['defense'][typeString][i].types[j]).className = 'effective';
+          document.getElementById(typeString + '-' + json['defense'][typeString][i].types[j]).className = 'effective';
         }
       }
     }
@@ -99,6 +103,7 @@ function highlightAttTypes(e) {
         if(json['defense'][typeString][i].types[j] != null) {
           console.log("Nicht effektiv: " + json['defense'][typeString][i].types[j]);
           document.getElementById('att-' + json['defense'][typeString][i].types[j]).className = 'noteffective';
+          document.getElementById(typeString + '-' + json['defense'][typeString][i].types[j]).className = 'noteffective';
         }
       }
     }
@@ -108,6 +113,7 @@ function highlightAttTypes(e) {
         if(json['defense'][typeString][i].types[j] != null) {
           console.log("Immun: " + json['defense'][typeString][i].types[j]);
           document.getElementById('att-' + json['defense'][typeString][i].types[j]).className = 'immun';
+          document.getElementById(typeString + '-' + json['defense'][typeString][i].types[j]).className = 'immun';
         }
       }
     }

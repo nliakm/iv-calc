@@ -328,42 +328,45 @@ select option[data-default] {
   border-spacing:0;
   cursor: text;
 }
-.tg td{
+.tg td {
   font-family:Arial, sans-serif;
-  font-size:14px;
-  padding:20px 20px;
-  border-style:solid;
-  border-width:1px;
-  overflow:hidden;
-  word-break:normal;
-}
-.tg th{font-family:Arial, sans-serif;
   font-size:14px;
   font-weight:normal;
   padding:20px 20px;
   border-style:solid;
   border-width:1px;
-  overflow:hidden;
+  /*overflow:hidden;*/
   word-break:normal;
-  cursor: default;
+}
+.tg th {
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  padding:20px 20px;
+  border-style:double;
+  border-width:1px;
+  /*overflow:hidden;*/
+  word-break:normal;
+}
+.tg th:hover {
+  background-color: #f5f5f5;
 }
 .tg th.selected {
   background-color: green;
 }
-
-.tg th.effective {
+.tg th.effective, .tg td.effective {
   background-color: green;
 }
-.tg th.noteffective {
+.tg th.noteffective, .tg td.noteffective {
   background-color: yellow;
 }
-.tg th.immun {
+.tg th.immun, .tg td.immun {
   background-color: red;
 }
 .tg .tg-baqh{
   text-align:center;
-  vertical-align:top;
+  vertical-align:center-block;
 }
 .tg .tg-yw4l{
-  vertical-align:top;
+  vertical-align:center-block;
 }
